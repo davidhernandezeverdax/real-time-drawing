@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Drawing App</title>
+</head>
+<body>
+    <div id="entryForm">
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="joinRoom()">Join</button>
+    </div>
+
+    <div id="drawingArea" style="display:none;">
+        <div id="usersPanel"></div>
+        <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/sketch.js"></script>
+</body>
+</html>
